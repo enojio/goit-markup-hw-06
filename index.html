@@ -449,16 +449,16 @@
               placeholder="Введите текст"
             ></textarea>
           </div>
-          <div class="form-check">
-            <input class="check-input" type="checkbox" id="check" name="privacy" />
-            <label class="check-label" for="check"
-              >Соглашаюсь с рассылкой и принимаю<a
-                class="policy-link"
-                href="https://policies.google.com/terms?hl=ru-UA&fg=1"
-                >Условия договора</a
-              ></label
-            >
-          </div>
+          <label class="check-label">
+            <input class="check-input" type="checkbox" name="checkbox" value="checkbox" />
+            <span class="check-ico">
+              <svg width="16" height="15">
+                <use href="./images/checked.svg"></use>
+              </svg>
+            </span>
+            Соглашаюсь с рассылкой и принимаю<a class="policy-link" href="">Условия договора</a>
+          </label>
+
           <button class="send-btn" type="submit">Отправить</button>
         </form>
       </div>
